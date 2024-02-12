@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5G NR Setting Recommendation</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <h1>5G NR Setting Recommendation</h1>
+    <div class="wrapper">
+        <form id="coordinatesForm">
+            <div style="display: flex;justify-content: space-around;">
+                <div style="margin-bottom: 20px;">
+                    <label for="latitude">Latitude:</label>
+                    <input type="text" id="latitude" name="latitude" value="47.5115" required>
+                </div>
+                <div>
+                    <label for="longitude">Longitude:</label>
+                    <input type="text" id="longitude" name="longitude" value="6.7953" required>
+                </div>
+            </div>
+            <div style="display: flex; justify-content: space-between;">
+                <div>
+                    <label for="binsize">Binsize in Meters:</label>
+                    <input type="text" id="binsize" name="binsize" value="2000" required>
+                </div>
+                <div style="width:50%;">
+                    <button style="width:100%" type="submit">Compute Settings</button>
+                </div>
+            </div>
+        </form>
+        <h2 style="text-shadow: 1px 1px 0px #000000;">Recommended Parameters For Antenna:</h2>
+        <div class="spin-wrap hide">
+            <div class="my-spinner"><div></div><div></div><div></div></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
